@@ -7,3 +7,9 @@ yigindi = son1 + son2
 
 # Natijani chiqaramiz
 print("Yig‘indi:", yigindi)
+
+
+""""
+its just analiz to the git hubbb
+
+"""
