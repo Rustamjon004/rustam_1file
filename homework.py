@@ -71,7 +71,7 @@ def delete_user(user_id):
         conn.commit()
         conn.close()
 
-        
+
 def update_user(self):
         conn = psycopg2.connect("dbname=test user=postgres password=pass")
         cursor = conn.cursor()
