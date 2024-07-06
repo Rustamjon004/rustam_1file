@@ -1,0 +1,41 @@
+#homework 
+from typing import Any
+
+
+class toqson:
+    def __init__(self,max_num):
+        self.max_num = max_num
+        self.x =0
+
+    def __iter__(self):
+        return self 
+    
+    def __next__(self):
+        if self.x > self.max_num:
+            raise StopIteration
+        self.odd_num = self.x
+        self.x +=3 
+        return self.odd_num
+
+max_num =10
+odd_iteratr = toqson(max_num)
+for toq in odd_iteratr:
+#    print(toq)
+
+
+#type 2
+  def toq_son(my_num):
+      num = 0
+      while num <= my_num:
+          yield num 
+          num += 3
+
+my_num = 10
+toq_son_generator = toq_son(my_num)
+
+for i in toq_son_generator:
+   print(i)
+
+       
+      
+    
