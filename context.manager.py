@@ -45,7 +45,7 @@ with DBCconnect(db_params) as (conn,cur):
 
     update_car = ''' update car set name = ' Malibu premier turbo ' where id = 3; '''
     cur.execute(update_car)
-    conn.commit()
+     conn.commit()
 
     delete_car = ''' DELETE FROM car WHERE id = 1;'''
     #cur.execute(delete_car)
